@@ -6,6 +6,6 @@ This is a parent project as a library. It's a summary of my Android development 
 Usage:
 
 1, set application of your project as BaseApp.
-  set "android:name="com.yeepay.mobile.tv.base.BaseLenovoApp" in your <application .../>
+  set "android:name="me.pc.mobile.helper.v14.base.BaseLenovoApp" in your <application .../>
 2, set your Activity inherited from BaseActivity.
 3, set your Fragment inherited from BaseFrag.
