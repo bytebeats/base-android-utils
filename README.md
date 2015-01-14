@@ -5,6 +5,6 @@ This is a parent project as a library. It's a summary of my Android development 
 
 Usage:
 
-1, set application of your project as BaseApp. set "android:name="me.pc.mobile.helper.v14.base.BaseApp" in your <application .../>
+1, set application of your project as BaseApp. set "android:name="me.pc.mobile.helper.v14.base.BaseApp" in your AndroidManifest.xml
 2, set your Activity inherited from BaseActivity.
 3, set your Fragment inherited from BaseFrag.
