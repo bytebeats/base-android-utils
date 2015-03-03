@@ -41,11 +41,12 @@ public abstract class BaseFrag extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		return initLayout(inflater);
+		View view=initLayout(inflater);
+		findViewById(view);
+		return view;
 	}
 
 	public void onViewCreated(View view, Bundle savedInstanceState) {
-		findViewById(view);
 		initWidget();
 		loadData();
 	};
