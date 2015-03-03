@@ -42,7 +42,7 @@ public abstract class BaseFrag extends Fragment {
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view=initLayout(inflater);
-		findViewById(view);
+		findViewsById(view);
 		return view;
 	}
 
@@ -53,7 +53,7 @@ public abstract class BaseFrag extends Fragment {
 
 	public abstract View initLayout(LayoutInflater inflater);
 
-	public abstract void findViewById(View parent);
+	public abstract void findViewsById(View parent);
 
 	public abstract void initWidget();
 
