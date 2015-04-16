@@ -26,7 +26,19 @@ public final class RegexUtil {
 	public static final String EMAIL_REGEX = "^\\s*\\w+(?:\\.{0,1}[\\w-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\\.[a-zA-Z]+\\s*$";
 	public static final String MOBILE_NUM_REGEX = "^(\\+86)?((13[0-9])|(15[^4,\\D])|(18[^4,\\D])|(170))\\d{8}$";
 	public static final String QQ_REGEX = "^[1-9][0-9]{4,9}$";
+	public static final String PASSWORD_REGEX = "^[1-9a-zA-X]{6,20}$";
 
+	/**
+	 * @Title: isPasswordValid
+	 * @Description: verify a valid password.
+	 * @param email
+	 * @return boolean
+	 * @throws null
+	 */
+	public static boolean isPasswordValid(String password) {
+		return password.matches(PASSWORD_REGEX);
+	}
+	
 	/**
 	 * @Title: isEmailValid
 	 * @Description: verify a valid email address
