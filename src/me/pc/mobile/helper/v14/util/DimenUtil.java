@@ -68,37 +68,37 @@ public class DimenUtil {
 		// 1080
 		tmp = convertStreamToString(src.getAbsolutePath(), 1.0f);
 		writeFile(targetXXLarge.getAbsolutePath(), tmp);
-		File file = new File(path_sw720dp);
-		File[] files = file.listFiles();
-		String temp = "";
-		for (File file2 : files) {
-			// write 540
-			temp = convertStreamToString(file2.getAbsolutePath(),
-					scale_values_sw540dp);
-			writeFile(path_sw540dp + file2.getName(), temp);
-			// write 600
-			temp = convertStreamToString(file2.getAbsolutePath(),
-					scale_values_sw600dp);
-			writeFile(path_sw600dp + file2.getName(), temp);
-			// write 672
-			temp = convertStreamToString(file2.getAbsolutePath(),
-					scale_values_sw672dp);
-			writeFile(path_sw672dp + file2.getName(), temp);
-			// write large
-			temp = convertStreamToString(file2.getAbsolutePath(),
-					scale_values_large);
-			writeFile(path_large + file2.getName(), temp);
+//		File file = new File(path_sw720dp);
+//		File[] files = file.listFiles();
+//		String temp = "";
+//		for (File file2 : files) {
+//			// write 540
+//			temp = convertStreamToString(file2.getAbsolutePath(),
+//					scale_values_sw540dp);
+//			writeFile(path_sw540dp + file2.getName(), temp);
+//			// write 600
+//			temp = convertStreamToString(file2.getAbsolutePath(),
+//					scale_values_sw600dp);
+//			writeFile(path_sw600dp + file2.getName(), temp);
+//			// write 672
+//			temp = convertStreamToString(file2.getAbsolutePath(),
+//					scale_values_sw672dp);
+//			writeFile(path_sw672dp + file2.getName(), temp);
+//			// write large
+//			temp = convertStreamToString(file2.getAbsolutePath(),
+//					scale_values_large);
+//			writeFile(path_large + file2.getName(), temp);
 
 			// write xlarge
-			temp = convertStreamToString(file2.getAbsolutePath(),
-					scale_values_sw720dp);
-			writeFile(path_xlarge + file2.getName(), temp);
+//			temp = convertStreamToString(file2.getAbsolutePath(),
+//					scale_values_sw720dp);
+//			writeFile(path_xlarge + file2.getName(), temp);
 
-			// write 1080
-			temp = convertStreamToString(file2.getAbsolutePath(),
-					scale_values_sw1080dp);
-			writeFile(path_sw1080dp + file2.getName(), temp);
-		}
+//			// write 1080
+//			temp = convertStreamToString(file2.getAbsolutePath(),
+//					scale_values_sw1080dp);
+//			writeFile(path_sw1080dp + file2.getName(), temp);
+//		}
 	}
 
 	/**
