@@ -44,6 +44,30 @@ public class DimenUtil {
 	private static float scale_values_sw1080dp = 1.50f;
 
 	public static void main(String[] args) {
+		File src = new File(
+				"D:/Users/SilentKnight//res/values-sw1080dp/dimen.xml");
+		File target720 = new File(
+				"D:/Users/SilentKnight/res/values-sw720dp/dimen.xml");
+		File target540 = new File(
+				"D:/Users/SilentKnight/res/values-sw540dp/dimen.xml");
+		File targetLarge = new File(
+				"D:/Users/SilentKnight/res/values-large/dimen.xml");
+		File targetXLarge = new File(
+				"D:/Users/SilentKnight/res/values-xlarge/dimen.xml");
+		File targetXXLarge = new File(
+				"D:/Users/SilentKnight/res/values-xxlarge/dimen.xml");
+		// 720
+		String tmp = convertStreamToString(src.getAbsolutePath(), (float) 2 / 3);
+		writeFile(target720.getAbsolutePath(), tmp);
+		writeFile(targetXLarge.getAbsolutePath(), tmp);
+		// 540
+		tmp = convertStreamToString(src.getAbsolutePath(),
+				(float) 2 / 3 * 0.75f);
+		writeFile(target540.getAbsolutePath(), tmp);
+		writeFile(targetLarge.getAbsolutePath(), tmp);
+		// 1080
+		tmp = convertStreamToString(src.getAbsolutePath(), 1.0f);
+		writeFile(targetXXLarge.getAbsolutePath(), tmp);
 		File file = new File(path_sw720dp);
 		File[] files = file.listFiles();
 		String temp = "";
