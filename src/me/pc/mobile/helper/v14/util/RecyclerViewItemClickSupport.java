@@ -3,7 +3,7 @@ package me.pc.mobile.helper.v14.util;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.creditease.zhiwang.R;
+import me.pc.mobile.helper.v14.R;
 
 /**
  * Created by Pan Chen on 4/1/16 : 15:15.
